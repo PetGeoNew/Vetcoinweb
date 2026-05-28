@@ -5,18 +5,21 @@ export function initMobileMenu() {
 
 	if (!button || !menu) return;
 
+	const mobileMq = window.matchMedia('(max-width: 1561px)');
 	let isOpen = false;
-	// Menu now stays in the DOM (see header.css) — keep it out of the tab order
-	// and hidden from screen readers while closed.
-	menu.inert = true;
 
 	const setOpen = (open) => {
 		isOpen = open;
 		button.setAttribute('aria-expanded', String(open));
 		menu.classList.toggle('header__links--open', open);
-		menu.inert = !open;
-		document.body.style.overflow = open ? 'hidden' : '';
+		// On desktop the nav is inline and always interactive; only gate a11y/scroll on mobile.
+		menu.inert = mobileMq.matches ? !open : false;
+		document.body.style.overflow = open && mobileMq.matches ? 'hidden' : '';
 	};
+
+	const reapply = () => setOpen(isOpen);
+	mobileMq.addEventListener('change', reapply);
+	reapply();
 
 	button.addEventListener('click', () => setOpen(!isOpen));
 
