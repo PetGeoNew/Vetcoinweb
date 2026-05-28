@@ -126,3 +126,11 @@
 .whitepaper__contact-link--break {
 	word-break: break-all;
 }
+
+@media (min-width: 1562px) {
+	.whitepaper {
+		width: 966px;
+		margin: 0 auto;
+		padding: 150px 0 157px;
+	}
+}
