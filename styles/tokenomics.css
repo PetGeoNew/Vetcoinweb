@@ -163,3 +163,80 @@
 	line-height: 20px;
 	text-align: center;
 }
+
+@media (min-width: 1562px) {
+	.tokenomics {
+		padding: 128px 0 0;
+	}
+
+	.tokenomics__heading {
+		display: grid;
+		grid-template-columns: max-content max-content;
+		gap: 0;
+		justify-content: space-between;
+		align-items: start;
+		width: 1232px;
+		margin: 0 auto;
+	}
+
+	.tokenomics__glow {
+		top: -22px;
+		left: 50%;
+		right: auto;
+		width: 497px;
+		height: 91px;
+		transform: translateX(-50%);
+		filter: blur(90.67px);
+	}
+
+	.tokenomics__title {
+		grid-column: 1 / -1;
+		grid-row: 1;
+		justify-self: center;
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.tokenomics__subtitle {
+		grid-column: 1 / -1;
+		grid-row: 2;
+		justify-self: center;
+		width: 672px;
+		margin-top: 16px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.tokenomics__chart {
+		grid-column: 1;
+		grid-row: 3;
+		width: 607px;
+		height: 607px;
+		margin: 64px 0 0;
+	}
+
+	.tokenomics__details {
+		grid-column: 2;
+		grid-row: 3;
+		gap: 0;
+		margin-top: 64px;
+	}
+
+	.tokenomics__lead {
+		display: none;
+	}
+
+	.tokenomics__cards {
+		align-items: flex-start;
+	}
+
+	.tokenomics__card {
+		flex: none;
+		width: 227.19px;
+		height: 234px;
+	}
+
+	.tokenomics__card--wide {
+		width: 227.19px;
+	}
+}
