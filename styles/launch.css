@@ -111,3 +111,78 @@
 	font-size: 16px;
 	line-height: 1;
 }
+
+@media (min-width: 1562px) {
+	.launch {
+		padding: 80px 16px;
+	}
+
+	.launch__card {
+		width: 1230px;
+	}
+
+	.launch__bg {
+		inset: 0 0 auto 0;
+		height: 268px;
+		background:
+			url('/assets/launch_bg_cat.jpg') left top / 410px 615px no-repeat,
+			url('/assets/launch_bg_cat.jpg') right top / 410px 615px no-repeat;
+	}
+
+	.launch__glow {
+		background: radial-gradient(
+			579px 1000px at 50% 50%,
+			rgba(255, 140, 0, 0.6) 0%,
+			rgba(255, 140, 0, 0) 100%
+		);
+	}
+
+	.launch__inner {
+		padding: 40px;
+	}
+
+	.launch__image {
+		height: 218px;
+	}
+
+	.launch__content {
+		gap: 30px;
+		padding-top: 20px;
+	}
+
+	.launch__text {
+		gap: 17px;
+		width: 768px;
+	}
+
+	.launch__title {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.launch__subtitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.launch__badges {
+		flex-wrap: nowrap;
+		gap: 24px;
+	}
+
+	.launch__badge {
+		flex: 0 0 auto;
+		height: 34px;
+		padding: 0 25.5px;
+		box-shadow: 0 0 0 1.2px #ff8c00;
+		border-radius: 12px;
+		font-size: 17px;
+		line-height: 24px;
+		gap: 10px;
+	}
+
+	.launch__badge-check {
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
