@@ -244,3 +244,88 @@
 	font-weight: 400;
 	line-height: 22.75px;
 }
+
+@media (min-width: 1562px) {
+	.petgeo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 64px 48px;
+		padding: 128px 165px;
+	}
+
+	.petgeo__heading,
+	.petgeo__intro {
+		display: contents;
+	}
+
+	.petgeo__intro-head {
+		grid-column: 1 / -1;
+		align-items: center;
+		gap: 16px;
+		text-align: center;
+	}
+
+	.petgeo__glow {
+		top: -28px;
+		left: 50%;
+		width: 552px;
+		height: 91px;
+		filter: blur(90.667px);
+		transform: translateX(-50%);
+	}
+
+	.petgeo__title {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.petgeo__subtitle {
+		width: 672px;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.petgeo__lost {
+		align-self: center;
+		gap: 24px;
+	}
+
+	.petgeo__lost-title {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.petgeo__lost-text {
+		font-size: 18px;
+		line-height: 29.25px;
+	}
+
+	.petgeo__list {
+		gap: 12px;
+		margin-top: 0;
+	}
+
+	.petgeo__stat {
+		height: 395.328px;
+	}
+
+	.petgeo__stat-content {
+		gap: 8px;
+	}
+
+	.petgeo__stat-number {
+		margin-top: 8px;
+	}
+
+	.petgeo__cards {
+		grid-column: 1 / -1;
+		flex-direction: row;
+		gap: 24px;
+	}
+
+	.petgeo__card {
+		flex: 1;
+		min-width: 0;
+	}
+}
