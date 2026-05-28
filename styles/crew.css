@@ -121,3 +121,52 @@
 	font-weight: 400;
 	line-height: 24px;
 }
+
+@media (min-width: 1562px) {
+	.crew {
+		padding: 80px 165px;
+	}
+
+	.crew__glow {
+		top: 52px;
+		width: 552px;
+		height: 91px;
+		filter: blur(90.667px);
+	}
+
+	.crew__title {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.crew__subtitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.crew__cards {
+		flex-direction: row;
+		justify-content: center;
+		gap: 32px;
+		margin-top: 48px;
+	}
+
+	.crew__card {
+		width: 389.33px;
+		height: 452px;
+	}
+
+	.crew__badge {
+		top: 16px;
+		right: 16px;
+	}
+
+	.crew__info {
+		bottom: 34px;
+		left: 24px;
+	}
+
+	.crew__name {
+		line-height: 32px;
+	}
+}
