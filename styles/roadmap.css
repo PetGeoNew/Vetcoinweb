@@ -149,3 +149,38 @@
 	color: #ff8c00;
 	line-height: 24px;
 }
+
+@media (min-width: 1562px) {
+	.roadmap {
+		gap: 64px;
+		padding: 128px 165px 0;
+	}
+
+	.roadmap__glow {
+		top: 100px;
+		width: 552px;
+		height: 91px;
+		border-radius: 9999px;
+		filter: blur(91px);
+	}
+
+	.roadmap__title {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.roadmap__subtitle {
+		max-width: 672px;
+		margin: 0 auto;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.roadmap__carousel {
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		scroll-snap-type: none;
+	}
+}
