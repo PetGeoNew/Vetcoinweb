@@ -84,3 +84,48 @@
 	line-height: 22.75px;
 	color: #888899;
 }
+
+@media (min-width: 1562px) {
+	.utility {
+		gap: 16px;
+		padding: 36px 24px;
+		align-items: center;
+	}
+
+	.utility__title,
+	.utility__subtitle,
+	.utility__carousel {
+		width: 100%;
+		max-width: 1232px;
+	}
+
+	.utility__title {
+		font-size: 48px;
+		line-height: 48px;
+		text-align: center;
+	}
+
+	.utility__subtitle {
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.utility__carousel {
+		justify-content: center;
+		gap: 24px;
+		overflow: visible;
+		margin: 48px 0 0;
+		padding: 0;
+		scroll-snap-type: none;
+		scroll-padding: 0;
+	}
+
+	.utility__card {
+		flex: 0 0 290px;
+	}
+
+	.utility__card-text {
+		max-width: 240px;
+	}
+}
