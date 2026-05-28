@@ -39,3 +39,17 @@
 	font-weight: 600;
 	line-height: 24px;
 }
+
+@media (min-width: 1562px) {
+	.highlights {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+		padding: 50px 165px;
+	}
+
+	.highlights__item {
+		width: 284px;
+	}
+}
