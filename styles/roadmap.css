@@ -1,0 +1,151 @@
+.roadmap {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 36px 16px;
+	background: #0a0a0f;
+}
+
+.roadmap__glow {
+	position: absolute;
+	top: 36px;
+	left: 50%;
+	width: 343px;
+	height: 179px;
+	transform: translateX(-50%);
+	background: #ff8c00;
+	border-radius: 50%;
+	opacity: 0.4;
+	filter: blur(135px);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.roadmap__title {
+	position: relative;
+	z-index: 1;
+	color: #ff8c00;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+}
+
+.roadmap__subtitle {
+	position: relative;
+	z-index: 1;
+	color: #888899;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.roadmap__carousel {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: stretch;
+	gap: 24px;
+	overflow-x: auto;
+	margin: 0 -16px;
+	padding: 0 16px;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 0 16px;
+	scrollbar-width: none;
+}
+
+.roadmap__carousel::-webkit-scrollbar {
+	display: none;
+}
+
+.roadmap__card {
+	position: relative;
+	flex: 0 0 290px;
+	display: flex;
+	flex-direction: column;
+	background: #151520;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	overflow: hidden;
+	scroll-snap-align: start;
+}
+
+.roadmap__card-media {
+	position: relative;
+	flex-shrink: 0;
+	height: 160px;
+	overflow: hidden;
+}
+
+.roadmap__card-media picture {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.roadmap__card-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.roadmap__badge {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 12px;
+	background: rgba(255, 140, 0, 0.9);
+	border-radius: 999px;
+	color: #0a0a0f;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+.roadmap__card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 24px;
+}
+
+.roadmap__card-title {
+	color: #f5f5f5;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.roadmap__list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.roadmap__list-item {
+	position: relative;
+	padding-left: 14px;
+	color: #888899;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.roadmap__list-item::before {
+	content: '•';
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #ff8c00;
+	line-height: 24px;
+}

@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#0a0a0f" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta
+			name="description"
+			content="VETcoin Whitepaper — BEP-20 token utility, tokenomics, distribution and roadmap of the PetGeo ecosystem."
+		/>
+		<title>VETcoin Whitepaper — Token Utility, Tokenomics & Roadmap</title>
+
+		<link rel="canonical" href="https://vetcoin.net/whitepaper/" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="VETcoin" />
+		<meta
+			property="og:title"
+			content="VETcoin Whitepaper — Token Utility, Tokenomics & Roadmap"
+		/>
+		<meta
+			property="og:description"
+			content="BEP-20 token utility, tokenomics, distribution and roadmap of the PetGeo ecosystem."
+		/>
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:image" content="https://vetcoin.net/assets/og-image.png" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:url" content="https://vetcoin.net/whitepaper/" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="VETcoin Whitepaper — Token Utility, Tokenomics & Roadmap"
+		/>
+		<meta
+			name="twitter:description"
+			content="BEP-20 token utility, tokenomics, distribution and roadmap of the PetGeo ecosystem."
+		/>
+		<meta name="twitter:image" content="https://vetcoin.net/assets/og-image.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/svg+xml" href="/assets/vetcoin_logo.svg" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
+		<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "WebSite",
+						"@id": "https://vetcoin.net/#website",
+						"name": "VETcoin",
+						"url": "https://vetcoin.net/",
+						"inLanguage": "en"
+					},
+					{
+						"@type": "TechArticle",
+						"headline": "VETcoin Whitepaper",
+						"description": "BEP-20 token utility, tokenomics, distribution and roadmap of the PetGeo ecosystem.",
+						"url": "https://vetcoin.net/whitepaper/",
+						"inLanguage": "en",
+						"image": "https://vetcoin.net/assets/og-image.png",
+						"isPartOf": { "@id": "https://vetcoin.net/#website" }
+					}
+				]
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- <div class="viewport-scaler" id="viewport-scaler"> -->
+			<!-- inject: ./partials/header.html -->
+
+			<main class="main">
+				<section class="whitepaper" id="whitepaper">
+					<h1 class="whitepaper__title">VETcoin (VETC) — White paper</h1>
+
+					<h2 class="whitepaper__heading">Abstract</h2>
+					<p class="whitepaper__text">
+						VETcoin (VETC) is a native BEP-20 utility token of the PetGeo
+						social network built on the Binance Smart Chain (BSC). VETcoin
+						powers a decentralized ecosystem for pet owners, volunteers, and
+						animal welfare organizations. The token enables payments, rewards
+						for activity, and payments for services within the PetGeo
+						application.
+					</p>
+
+					<h2 class="whitepaper__heading">Introduction</h2>
+					<p class="whitepaper__text">
+						The pet care and animal welfare market is growing rapidly, but
+						existing solutions lack transparency, fair reward mechanisms, and
+						true community ownership. PetGeo solves this by combining a
+						social network with blockchain technology. VETcoin is the
+						economic foundation of the ecosystem. It is not a fundraising
+						tool, but a fully functional asset with real utility from day
+						one.
+					</p>
+
+					<h2 class="whitepaper__heading">General Token Information</h2>
+					<div class="whitepaper__block">
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Name:</span>
+							<span class="whitepaper__value">VETcoin</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Ticker:</span>
+							<span class="whitepaper__value">VETC</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Network:</span>
+							<span class="whitepaper__value">Binance Smart Chain (BSC)</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Standard:</span>
+							<span class="whitepaper__value">BEP-20</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Total Supply:</span>
+							<span class="whitepaper__value">500,000,000 VETC</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Launch Type:</span>
+							<span class="whitepaper__value"
+								>Fair Launch (no presale, no seed round, no private
+								sales)</span
+							>
+						</p>
+					</div>
+
+					<h2 class="whitepaper__heading">Token Utility</h2>
+					<div class="whitepaper__block">
+						<p class="whitepaper__text">
+							VETcoin performs four main functions within the PetGeo
+							ecosystem.
+						</p>
+
+						<h3 class="whitepaper__sub whitepaper__sub--gap">
+							Rewards for Social Activity
+						</h3>
+						<p class="whitepaper__text">Users earn VETC for:</p>
+						<ul class="whitepaper__list">
+							<li>Reporting lost or found pets</li>
+							<li>Adding verified geotags on different pet services</li>
+							<li>Posting and validating reliable content</li>
+							<li>Completing community quests and tasks</li>
+						</ul>
+
+						<h3 class="whitepaper__sub whitepaper__sub--gap">
+							Payment for Services
+						</h3>
+						<p class="whitepaper__text">
+							Pet service providers (grooming, boarding, walking, veterinary
+							clinics) pay VETC to post and promote their listings.
+						</p>
+
+						<h3 class="whitepaper__sub whitepaper__sub--gap">
+							Donations and Charity
+						</h3>
+						<p class="whitepaper__text">
+							Users can send VETC directly to verified shelters, volunteer
+							groups, or other users. All donations are transparent and
+							recorded on the blockchain.
+						</p>
+
+						<h3 class="whitepaper__sub whitepaper__sub--gap">
+							Access and Bonuses
+						</h3>
+						<p class="whitepaper__text">
+							VETC holders gain access to exclusive features, bonus rewards,
+							and future ecosystem drops.
+						</p>
+					</div>
+
+					<h2 class="whitepaper__heading">Token Distribution</h2>
+					<div class="whitepaper__block">
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Total Supply:</span>
+							<span class="whitepaper__value">500,000,000 VETC</span>
+						</p>
+
+						<p class="whitepaper__row whitepaper__row--gap">
+							<span class="whitepaper__key">Liquidity (PancakeSwap) —</span>
+							<span class="whitepaper__value">60% (300,000,000 VETC)</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Marketing &amp; CEX Listings —</span>
+							<span class="whitepaper__value">15% (75,000,000 VETC)</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Community Airdrop —</span>
+							<span class="whitepaper__value">15% (75,000,000 VETC)</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Team —</span>
+							<span class="whitepaper__value">5% (25,000,000 VETC)</span>
+						</p>
+						<p class="whitepaper__row">
+							<span class="whitepaper__key">Ecosystem Reserve —</span>
+							<span class="whitepaper__value">5% (25,000,000 VETC)</span>
+						</p>
+					</div>
+
+					<h2 class="whitepaper__heading">Ecosystem Integration</h2>
+					<div class="whitepaper__block">
+						<p class="whitepaper__text">
+							VETcoin is not an isolated token. It is fully embedded into the
+							PetGeo application.
+						</p>
+						<p class="whitepaper__text whitepaper__text--gap">
+							After the launch of the PetGeo app (iOS and Android), users
+							will be able to:
+						</p>
+						<ul class="whitepaper__list">
+							<li>Connect their wallet</li>
+							<li>Earn VETC directly inside the app</li>
+							<li>Spend VETC without leaving the interface</li>
+							<li>
+								The smart contract is the single source of truth for all
+								transactions within the application.
+							</li>
+							<li>Market Strategy</li>
+							<li>Liquidity</li>
+							<li>
+								Deep initial liquidity on PancakeSwap ensures low slippage
+								and fair trading from block one.
+							</li>
+							<li>Global Marketing Campaign</li>
+							<li>
+								Including Tier 1 platform exposure and CEX exchange listings.
+							</li>
+						</ul>
+					</div>
+
+					<h2 class="whitepaper__heading">Team</h2>
+					<div class="whitepaper__block">
+						<p class="whitepaper__text">
+							The PetGeo and VETcoin team consists of experienced developers,
+							product managers, and blockchain specialists.
+						</p>
+						<p class="whitepaper__text whitepaper__text--gap">
+							The team allocation is 5% of the total supply — one of the
+							lowest in the industry. This reflects a commitment to community
+							values and long-term development, not short-term exit
+							liquidity.
+						</p>
+					</div>
+
+					<h2 class="whitepaper__heading">Roadmap</h2>
+					<div class="whitepaper__block">
+						<h3 class="whitepaper__phase">Phase 1 — Token Launch</h3>
+						<p class="whitepaper__text">Smart contract deployment on BSC</p>
+						<p class="whitepaper__text">Add liquidity to PancakeSwap</p>
+						<p class="whitepaper__text">Start global marketing campaign</p>
+
+						<h3 class="whitepaper__phase whitepaper__phase--gap">
+							Phase 2 — App Launch
+						</h3>
+						<p class="whitepaper__text">
+							Integrate token into PetGeo on iOS and Android
+						</p>
+						<p class="whitepaper__text">Basic wallet integration</p>
+						<p class="whitepaper__text">
+							VETC earning mechanics inside the app (MVP)
+						</p>
+
+						<h3 class="whitepaper__phase whitepaper__phase--gap">
+							Phase 3 — Full Integration
+						</h3>
+						<p class="whitepaper__text">Full VETC utility inside PetGeo</p>
+						<p class="whitepaper__text">Payment module for services</p>
+						<p class="whitepaper__text">Donation and charity features</p>
+
+						<h3 class="whitepaper__phase whitepaper__phase--gap">
+							Phase 4 — Expansion
+						</h3>
+						<p class="whitepaper__text">Listings on Tier 1 platforms</p>
+						<p class="whitepaper__text">
+							Cross-chain bridges (Polygon, Arbitrum, Base)
+						</p>
+						<p class="whitepaper__text">
+							Partnerships with shelters and veterinary networks
+						</p>
+					</div>
+
+					<h2 class="whitepaper__heading">
+						Legal Information and Disclaimer
+					</h2>
+					<p class="whitepaper__text">
+						VETcoin is a utility token intended exclusively for use within
+						the PetGeo ecosystem. It is not a security, investment contract,
+						or financial instrument. The token does not guarantee any
+						profit, yield, or return on investment. Users are responsible
+						for understanding the laws of their jurisdiction.
+					</p>
+
+					<h2 class="whitepaper__heading">Conclusion</h2>
+					<p class="whitepaper__text">
+						VETcoin is not another meme coin or a project with heavy
+						presales. It is a functional, fairly launched utility token
+						backed buy the real social network for pet lovers. With 60% of
+						supply in liquidity, no hidden investor allocations, and a clear
+						product roadmap, VETcoin is built for long-term adoption — not
+						speculation.
+					</p>
+
+					<h2 class="whitepaper__heading">Join the PetGeo movement</h2>
+
+					<div class="whitepaper__contact">
+						<div class="whitepaper__contact-label">
+							<img
+								class="whitepaper__contact-icon"
+								src="/assets/whitepaper_website.svg"
+								alt=""
+								width="20"
+								height="20"
+								aria-hidden="true"
+							/>
+							<span>Website:</span>
+						</div>
+						<a
+							class="whitepaper__contact-link"
+							href="https://vetcoin.net"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Vetcoin.net</a
+						>
+					</div>
+
+					<div class="whitepaper__contact">
+						<div class="whitepaper__contact-label">
+							<img
+								class="whitepaper__contact-icon"
+								src="/assets/whitepaper_twitter.svg"
+								alt=""
+								width="20"
+								height="20"
+								aria-hidden="true"
+							/>
+							<span>Twitter:</span>
+						</div>
+						<a
+							class="whitepaper__contact-link"
+							href="https://x.com/vetcointoken"
+							target="_blank"
+							rel="noopener noreferrer"
+							>x.com/vetcointoken</a
+						>
+					</div>
+
+					<div class="whitepaper__contact">
+						<div class="whitepaper__contact-label">
+							<img
+								class="whitepaper__contact-icon"
+								src="/assets/whitepaper_telegram.svg"
+								alt=""
+								width="20"
+								height="20"
+								aria-hidden="true"
+							/>
+							<span>Telegram:</span>
+						</div>
+						<a
+							class="whitepaper__contact-link"
+							href="https://t.me/vetcointoken"
+							target="_blank"
+							rel="noopener noreferrer"
+							>t.me/@vetcointoken</a
+						>
+					</div>
+
+					<div class="whitepaper__contact">
+						<div class="whitepaper__contact-label">
+							<img
+								class="whitepaper__contact-icon"
+								src="/assets/whitepaper_contract.svg"
+								alt=""
+								width="20"
+								height="20"
+								aria-hidden="true"
+							/>
+							<span>Contract:</span>
+						</div>
+						<a
+							class="whitepaper__contact-link whitepaper__contact-link--break"
+							href="https://bscscan.com/token/{{CONTRACT_ADDRESS}}"
+							target="_blank"
+							rel="noopener noreferrer"
+							>{{CONTRACT_ADDRESS}}</a
+						>
+					</div>
+				</section>
+
+				<!-- inject: ./partials/footer.html -->
+			</main>
+		<!-- </div> -->
+
+		<script type="module" src="/whitepaper.js"></script>
+	</body>
+</html>

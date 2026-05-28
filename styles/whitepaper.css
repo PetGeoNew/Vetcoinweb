@@ -1,0 +1,128 @@
+.whitepaper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 120px 20px 40px;
+	background: #0a0a0f;
+}
+
+.whitepaper__title {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.whitepaper__heading {
+	color: #ff8c00;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.whitepaper__text {
+	color: #d7d7d7;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.whitepaper__text--gap {
+	margin-top: 25px;
+}
+
+.whitepaper__block {
+	display: block;
+}
+
+/* key/value lines used in "General Token Information" and "Token Distribution" */
+.whitepaper__row {
+	color: #d7d7d7;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+.whitepaper__row--gap {
+	margin-top: 25px;
+}
+
+.whitepaper__key {
+	color: #d7d7d7;
+}
+
+.whitepaper__value {
+	color: #ff8c00;
+}
+
+/* bold subheading inside "Token Utility" */
+.whitepaper__sub {
+	color: #d7d7d7;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+.whitepaper__sub--gap {
+	margin-top: 25px;
+}
+
+/* orange phase heading inside "Roadmap" */
+.whitepaper__phase {
+	color: #ff8c00;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+.whitepaper__phase--gap {
+	margin-top: 25px;
+}
+
+.whitepaper__list {
+	list-style: disc;
+	padding-left: 24px;
+}
+
+.whitepaper__list li {
+	color: #d7d7d7;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+/* --- contacts (Join the PetGeo movement) --- */
+
+.whitepaper__contact {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.whitepaper__contact-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: #d7d7d7;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.whitepaper__contact-icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.whitepaper__contact-link {
+	color: #ff8c00;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+	text-decoration: underline;
+}
+
+.whitepaper__contact-link--break {
+	word-break: break-all;
+}

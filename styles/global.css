@@ -1,0 +1,78 @@
+:root {
+	--layout-width: 375px;
+	--layout-width-tablet: 750px;
+	--layout-width-desktop: 1200px;
+}
+
+@media (min-width: 750px) and (max-width: 1199px) {
+	:root {
+		--layout-width: 750px;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		--layout-width: 1200px;
+	}
+}
+
+html {
+	scroll-padding-top: 56px;
+}
+
+html,
+body {
+	min-width: 375px;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	font-family: 'Inter Tight', sans-serif;
+}
+
+/* DISABLED: viewport scaling
+@media (min-width: 376px) {
+	html {
+		scroll-padding-top: calc(56 * 100vw / var(--layout-width));
+	}
+}
+*/
+
+/* DISABLED: viewport scaling
+.viewport-scaler {
+	width: 100vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+*/
+
+.main {
+	transform-origin: top center;
+}
+
+/* DISABLED: viewport scaling
+@media (min-width: 376px) {
+	.main {
+		transform: scale(calc(100vw / var(--layout-width)));
+		width: var(--layout-width);
+		margin: 0 auto;
+	}
+}
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}

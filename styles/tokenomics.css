@@ -1,0 +1,165 @@
+.tokenomics {
+	background: #0a0a0f;
+	padding: 36px 16px;
+}
+
+.tokenomics__heading {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+/* мягкое оранжевое свечение за заголовком */
+.tokenomics__glow {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	z-index: 0;
+	width: 343px;
+	height: 179px;
+	border-radius: 999px;
+	background: #ff8c00;
+	opacity: 0.4;
+	filter: blur(135px);
+	pointer-events: none;
+}
+
+.tokenomics__title {
+	position: relative;
+	z-index: 1;
+	color: #ff8c00;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+}
+
+.tokenomics__subtitle {
+	color: #888899;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: center;
+}
+
+/* пончиковая диаграмма распределения токенов */
+.tokenomics__chart {
+	display: block;
+	width: 343px;
+	height: 343px;
+	margin: 0 auto;
+}
+
+.tokenomics__details {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.tokenomics__lead {
+	color: #888899;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.tokenomics__cards {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.tokenomics__row {
+	display: flex;
+	gap: 10px;
+}
+
+.tokenomics__card {
+	display: flex;
+	flex: 1 0 0;
+	min-width: 0;
+	flex-direction: column;
+	overflow: hidden;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	background: #171717;
+}
+
+.tokenomics__card--wide {
+	flex: initial;
+}
+
+.tokenomics__card-media {
+	position: relative;
+	height: 128px;
+	background: #171717;
+}
+
+.tokenomics__card-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.tokenomics__card-badge {
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	color: #0a0a0f;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+	box-shadow: 0 10px 7.5px rgba(0, 0, 0, 0.1), 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tokenomics__card-badge--liquidity {
+	background: #ff8c00;
+}
+
+.tokenomics__card-badge--marketing {
+	background: #ffbb00;
+}
+
+.tokenomics__card-badge--community {
+	background: #ff0000;
+}
+
+.tokenomics__card-badge--team {
+	background: #ff3c00;
+}
+
+.tokenomics__card-badge--ecosystem {
+	background: #ff6a00;
+}
+
+.tokenomics__card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: 24px;
+}
+
+.tokenomics__card-value {
+	color: #ff8c00;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+}
+
+.tokenomics__card-label {
+	color: #888899;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+}

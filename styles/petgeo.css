@@ -1,0 +1,246 @@
+.petgeo {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 36px 16px;
+	background: #0a0a0f;
+}
+
+.petgeo__accent {
+	color: #ff8c00;
+}
+
+/* --- heading --- */
+
+.petgeo__heading {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.petgeo__intro {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.petgeo__intro-head {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.petgeo__glow {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	z-index: 0;
+	width: 343px;
+	height: 179px;
+	border-radius: 999px;
+	background: #ff8c00;
+	opacity: 0.4;
+	filter: blur(135px);
+	pointer-events: none;
+}
+
+.petgeo__title {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.petgeo__subtitle {
+	position: relative;
+	z-index: 1;
+	color: #888899;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+/* --- Lost & Found --- */
+
+.petgeo__lost {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.petgeo__lost-title {
+	color: #f5f5f5;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	white-space: nowrap;
+}
+
+.petgeo__lost-text {
+	color: #888899;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.petgeo__list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 2px;
+	list-style: none;
+}
+
+.petgeo__list-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.petgeo__check {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: rgba(255, 140, 0, 0.2);
+	color: #ff8c00;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.petgeo__list-label {
+	color: #888899;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/* --- stat card --- */
+
+.petgeo__stat {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 252px;
+	box-shadow: 0 0 0 1px rgba(255, 140, 0, 0.2);
+	border-radius: 16px;
+	overflow: hidden;
+	background: #141414;
+}
+
+.petgeo__stat-photo {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.petgeo__stat-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to top,
+		rgba(10, 10, 15, 0.8) 0%,
+		rgba(10, 10, 15, 0.56) 50%,
+		rgba(10, 10, 15, 0.24) 100%
+	);
+}
+
+.petgeo__stat-content {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+	text-align: center;
+}
+
+.petgeo__stat-emoji {
+	font-size: 72px;
+	line-height: 72px;
+}
+
+.petgeo__stat-number {
+	color: #ff8c00;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.petgeo__stat-label {
+	color: #f5f5f5;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+/* --- feature cards --- */
+
+.petgeo__cards {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.petgeo__card {
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	background: #171717;
+	overflow: hidden;
+}
+
+.petgeo__card-media {
+	position: relative;
+	height: 128px;
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.petgeo__card-photo {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.petgeo__card-photo--geotags {
+	object-position: 50% 45%;
+}
+
+.petgeo__card-photo--quests {
+	object-position: 50% 13%;
+}
+
+.petgeo__card-photo--moderation {
+	object-position: 50% 0%;
+}
+
+.petgeo__card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 24px;
+}
+
+.petgeo__card-title {
+	color: #f5f5f5;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.petgeo__card-text {
+	color: #888899;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22.75px;
+}
