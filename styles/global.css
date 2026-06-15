@@ -77,3 +77,11 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+@media (min-width: 1562px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 75px;
+	}
+}

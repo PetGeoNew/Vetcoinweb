@@ -71,6 +71,10 @@
 	object-position: top;
 }
 
+.crew__image--3 {
+	object-position: center;
+}
+
 .crew__overlay {
 	position: absolute;
 	inset: 0;
@@ -124,7 +128,7 @@
 
 @media (min-width: 1562px) {
 	.crew {
-		padding: 80px 165px;
+		padding: 0 165px;
 	}
 
 	.crew__glow {

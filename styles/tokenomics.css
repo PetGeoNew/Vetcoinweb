@@ -104,6 +104,10 @@
 	object-position: center;
 }
 
+.tokenomics__card-image--team {
+	object-position: 50% 76%;
+}
+
 .tokenomics__card-badge {
 	position: absolute;
 	top: -7px;
