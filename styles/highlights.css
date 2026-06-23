@@ -40,6 +40,15 @@
 	line-height: 24px;
 }
 
+@media (min-width: 744px) and (max-width: 1561px) {
+	.highlights {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px 24px;
+		padding: 64px 40px;
+	}
+}
+
 @media (min-width: 1562px) {
 	.highlights {
 		flex-direction: row;

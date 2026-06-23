@@ -129,6 +129,38 @@
 }
 */
 
+@media (min-width: 744px) and (max-width: 1561px) {
+	html {
+		scroll-padding-top: 68px;
+	}
+
+	.header {
+		padding: 14px max(32px, calc((100vw - 1280px) / 2));
+	}
+
+	.header__logo-icon {
+		width: 32px;
+		height: 32px;
+	}
+
+	.header__title {
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.header__buy {
+		height: 40px;
+		padding: 10px 22px;
+		border-radius: 14px;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.header__links {
+		top: 68px;
+	}
+}
+
 @media (min-width: 1562px) {
 	html {
 		scroll-padding-top: 72px;

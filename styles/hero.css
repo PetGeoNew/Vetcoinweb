@@ -124,6 +124,40 @@
 	object-position: center;
 }
 
+@media (min-width: 744px) and (max-width: 1561px) {
+	.hero {
+		padding: 110px 40px 40px;
+	}
+
+	.hero__inner {
+		align-items: center;
+		gap: 24px;
+		max-width: 720px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.hero__title {
+		font-size: 52px;
+		line-height: 60px;
+	}
+
+	.hero__title-accent {
+		display: block;
+	}
+
+	.hero__subtitle {
+		max-width: 560px;
+		font-size: 18px;
+		line-height: 28.8px;
+	}
+
+	.hero__media {
+		height: 480px;
+		border-radius: 20px;
+	}
+}
+
 @media (min-width: 1562px) {
 	.hero {
 		position: relative;
