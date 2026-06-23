@@ -45,6 +45,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 40px 24px;
+		max-width: 744px;
+		margin: 0 auto;
 		padding: 64px 40px;
 	}
 }
