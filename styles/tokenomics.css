@@ -108,6 +108,12 @@
 	object-position: 50% 76%;
 }
 
+@media (max-width: 743px) {
+	.tokenomics__card-image--community {
+		object-position: 50% 66%;
+	}
+}
+
 .tokenomics__card-badge {
 	position: absolute;
 	top: -7px;
@@ -210,6 +216,14 @@
 
 	.tokenomics__card-media {
 		height: 160px;
+	}
+
+	.tokenomics__card-image--community {
+		object-position: 50% 64%;
+	}
+
+	.tokenomics__card-image--marketing {
+		object-position: 50% 31%;
 	}
 }
 
